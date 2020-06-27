@@ -3,7 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="jumbotron">
+      <h1 class="weatherDash">Weather Dashboard</h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <h3 class="searchText">Search City:</h3>
+      </div>
+      <div class="inputCity">
+        <input type="text" name="city" id="city" placeholder="City Name" />
+        <button id="submitbtn" class="btn btn-primary mb-2">Search</button>
+      </div>
+      <div id="previousCities"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
 </html>

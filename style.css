@@ -1,0 +1,25 @@
+.jumbotron {
+  margin-bottom: 0;
+  background-color: rgb(39, 39, 39);
+}
+
+.weatherDash {
+  text-align: center;
+  color: white;
+}
+
+.searchText {
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.inputCity {
+  float: left;
+  width: 50%;
+}
+
+#city {
+  margin-bottom: 10px;
+}
