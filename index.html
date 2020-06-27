@@ -8,23 +8,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Header of the webpage -->
     <div class="jumbotron">
       <h1 class="weatherDash">Weather Dashboard</h1>
     </div>
 
+    <!-- Divides the page into its own sections -->
     <div class="container">
       <div class="row">
         <div class="col-4 bg-light">
           <p class="search-header my-1">Search City:</p>
           <div class="input-group mb-3">
-            <input
-              id="city-input"
-              type="text"
-              class="form-control"
-              placeholder="Enter city name"
-              aria-label="Enter city name"
-            />
+            <input id="city-input" type="text" class="form-control" placeholder="Enter city name" />
             <div class="input-group-append">
+              <!-- Search Button Created -->
               <button id="submitBtn" class="btn btn-primary mb-2">Search</button>
             </div>
           </div>
@@ -34,6 +31,7 @@
             <div class="col-12 border border-dark m-3 rounded">
               <div class="row">
                 <div class="col-12">
+                  <!-- Displays the City Name and Results for the city searched -->
                   <span id="city-name" class="city-name align-middle"></span>
                   <img id="current-pic" src="placeholder" alt="" />
                 </div>
@@ -65,6 +63,8 @@
               <h3>5-Day Forecast</h3>
             </div>
           </div>
+
+          <!-- Displays the forecast for the next five days -->
           <div class="row">
             <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
             <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
@@ -76,7 +76,7 @@
       </div>
     </div>
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 function weatherLoad() {
+  // New variables for HTML elements
   let inputEl = document.getElementById("city-input");
   let searchEl = document.getElementById("submitBtn");
   let clearEl = document.getElementById("clear-history");
@@ -10,11 +11,11 @@ function weatherLoad() {
   let currentUVEl = document.getElementById("UV-index");
   let APIKey = "a181cc15c8052f9222bf837a547a0291";
 
+  // Function for retrieving information from Open Weather API
   function getWeather(cityName) {
     let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIKey;
     axios.get(queryURL).then(function (response) {
       let currentDate = new Date(response.data.dt * 1000);
-      console.log(currentDate);
       let day = currentDate.getDate();
       let month = currentDate.getMonth() + 1;
       let year = currentDate.getFullYear();
@@ -75,14 +76,16 @@ function weatherLoad() {
       });
     });
   }
-
+  // Makes button functional when clicked
   searchEl.addEventListener("click", function () {
     let searchTerm = inputEl.value;
     getWeather(searchTerm);
   });
 
+  // Fahrenheit conversion
   function k2f(K) {
     return Math.floor((K - 273.15) * 1.8 + 32);
   }
 }
+// Loads js functions and animations for entire page
 weatherLoad();
