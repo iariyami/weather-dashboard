@@ -1,5 +1,5 @@
 function weatherLoad() {
-  // New variables for HTML elements
+  // New variables for the HTML elements
   let inputEl = document.getElementById("city-input");
   let searchEl = document.getElementById("submitBtn");
   let clearEl = document.getElementById("clear-history");
